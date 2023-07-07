@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="/icons/favicon.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            常见问题 | Mokey客制化键盘
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">Mokey客制化键盘</a>
+    <a href="/" class="header-subtitle mdui-typo-headline"></a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">Overview</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">About</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Home</div>
+                </a>
+            
+                
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Tags</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Categories</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Archives</div>
+                </a>
+            
+                
+                <a href="/tools/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-tools"></i>
+                    </div>
+                    <div class="mdui-list-item-content">工具箱</div>
+                </a>
+            
+                
+                <a href="/about/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">About</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">Night Mode</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.gif"/>
+                
+            </div>
+            <div class="sidebar-author-name">Keyboard</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="mailto:xxx@xxx.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">Steam</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
+                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">Weibo</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">Links</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a target="_blank" rel="noopener" href="https://garybear.cn/hexo-theme-meadow/" class="mdui-list-item mdui-ripple">
+                            Meadow说明文档
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <div class="mdui-card mdui-p-b-2 mdui-m-b-5">
+    <div class="post-header"> 
+        <a class="post-header-title" href="/help/index.html">常见问题</a>
+    </div>
+    <div id="page-card" class="mdui-card-content mdui-p-x-4">
+        
+            
+            
+            
+            <blockquote><p>这里总结了一些比较常见，非常容易遇到并且不难解决的问题，仅供参考。</p>
+</blockquote>
+
+<h3 id="关于键位-正装-和-倒装-的区别"><a href="#关于键位-正装-和-倒装-的区别" class="headerlink" title="关于键位 正装 和 倒装 的区别"></a>关于键位 <a href>正装</a> 和 <a href>倒装</a> 的区别</h3><p><strong>正装优点：</strong><br>不卡原厂高度键帽，各种高度键帽通用，选择正装，未来将不会遇到有好看的键帽而不适配手里PCB的尴尬<br><img src="/help/index/zhen.jpg"><br><strong>倒装优点：</strong><br>对于透光字符有好处，光能从键帽的上半部分透出，只有一个缺点，卡原厂高度键帽，对于其他高度键帽没有限制，如果对透光键帽有需求的，要选倒装<br><img src="/help/index/dao.jpg"></p>
+<h3 id="关于PCB颜色问题"><a href="#关于PCB颜色问题" class="headerlink" title="关于PCB颜色问题"></a>关于PCB颜色问题</h3><p>PCB上的颜色只是电路板的阻焊颜色，对电路板的性能没有任何影响。<br><img src="/help/index/zuhan.jpg"></p>
+<h3 id="关于PCB厚度"><a href="#关于PCB厚度" class="headerlink" title="关于PCB厚度"></a>关于PCB厚度</h3><p>PCB均采用厚度为1.6mm的FR-4材料（PCB常用材料和厚度）。<br><img src="/help/index/houdu.jpg"></p>
+<h3 id="关于钢网厚度问题"><a href="#关于钢网厚度问题" class="headerlink" title="关于钢网厚度问题"></a>关于钢网厚度问题</h3><p>PCB常用钢网厚度为0.12mm，为保证PCB质量，调整为0.2mm厚度，这样会增加焊锡的使用量，增加制作成本，但是会给PCB元件增加强度，在快递长途运输中更好的保护元件，不易脱落。<br><img src="/help/index/gangwang.jpg"></p>
+<h3 id="建议收到货后进行按键触发测试"><a href="#建议收到货后进行按键触发测试" class="headerlink" title="建议收到货后进行按键触发测试"></a>建议收到货后进行按键触发测试</h3><p>虽然在生产环节尽力排除了可能对PCB品质造成影响的因素，包括加强了包装强度，但在快递运输过程中是不受我们控制的，建议收到货后第一时间测试按键触发情况。<br>测试方法：<br>1.把PCB背面朝上<br>2.用镊子短接（短路）热插拔两个引脚，按键正常触发即可<br>注意：不可直接从正面短接，容易造成热插拔轴座损坏。<br><img src="/help/index/chufa.jpg"></p>
+<h3 id="静音棉（底棉）串键，发热问题"><a href="#静音棉（底棉）串键，发热问题" class="headerlink" title="静音棉（底棉）串键，发热问题"></a>静音棉（底棉）串键，发热问题</h3><p>键盘也是一块普通的电路板，尤其是底面，有很多元件都带有正级（VCC）和负级（GND），若要是底棉材料不好，容易引起正负极相连，造成发热等未知问题，造成PCB损坏。</p>
+<p>例如RTX-3080显卡，应该不会有人给他上面贴一些“异物”，因为都怕串电，键盘也是如此，如果需要解决“消音”问题，最好用硅胶类的消音材料比较好。</p>
+<h3 id="轴体安装到PCB上，有些歪的问题"><a href="#轴体安装到PCB上，有些歪的问题" class="headerlink" title="轴体安装到PCB上，有些歪的问题"></a>轴体安装到PCB上，有些歪的问题</h3><p><img src="/help/index/zhouti.jpg"><br><img src="/help/index/zhouzheng.jpg"><br>PCB均采用凯华轴座，按照标准文件做孔，孔位肯定没有问题。</p>
+<p>若要是发现安装轴体后有“歪”的情况，最好是在组装所有零件前能把轴体都安装到PCB上看一下，如果有不正的，需要反方向矫正一下轴体，因为轴体的两个引脚有弹性，稍微用力矫正是可以的，矫正过后的样子就可以做到上图一样了。</p>
+<p>备注：有的友商宣传说佳达隆轴座比凯华好的，这个不做争论，各有喜爱，都是成本一样的东西，原理也都相当简单，没有谁比谁好一说。</p>
+<h3 id="过粗的外壳螺丝柱问题（造成串键）"><a href="#过粗的外壳螺丝柱问题（造成串键）" class="headerlink" title="过粗的外壳螺丝柱问题（造成串键）"></a>过粗的外壳螺丝柱问题（造成串键）</h3><p><img src="/help/index/waikeluosizhu.jpg"><br>大家在购买外壳时候需要分清楚外壳是有不同的，有一种适用于热插拔轴座使用的（图左），还有一种适合焊接板使用的（图右），有很多客户发现问题来怪PCB是不是做的不对，却不知是自己不懂造成的，本身热插拔轴座有着较宽的体量，很容易在H键/R-Alt键的地方与外壳螺丝柱接触到，就会造成串键，如果您不小心买到了过粗的螺丝柱外壳也不必担心，只要做好绝缘就不会发生串键的情况，不过如果既然选用热插拔的板子，最好使用比较细的螺丝柱外壳。</p>
+<h3 id="配套外壳"><a href="#配套外壳" class="headerlink" title="配套外壳"></a>配套外壳</h3><p><img src="/help/index/waike.jpg"><br>PCB尺寸：285mm×95mm，适用于GH60外壳（有上图6个螺丝柱的）和适用于60%按键的亚克力堆叠外壳，USB左出，位于第一个按键和第二个按键之间。</p>
+
+            
+        </div>
+    </div>
+    
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">livere</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="lv-container" data-id="city" data-uid="">
+  <script type="text/javascript">
+    (function (d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+      if (typeof LivereTower === 'function') { return; }
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by LiveRe.</noscript>
+</div>
+        </div>
+      
+    </div>
+
+
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2015 - 2023 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        Keyboard
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>Total Visitors <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>Total Views <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+    
+<script src="/js/mdui.min.v1.0.0.js"></script>
+
+
+
+
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
