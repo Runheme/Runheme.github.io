@@ -1,935 +1,281 @@
 <!DOCTYPE html>
 <html lang="zh-CH">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Cache-Control" content="no-siteapp">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    
-    <meta name="renderer" content="webkit"/>
-    <meta name="force-rendering" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
-    
-    
-        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
-        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
-    
-    
-    
-        <link rel="shortcut icon" href="/icons/favicon.ico">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
     
-    
-        
-<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
-
-    
-    
-<link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="/css/iconfont.css">
-
-
-    
+      <link rel="icon" href="/favicon.png" />
     
 
-    
-        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    
-        <script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        
-            load: ['[tex]/mhchem'],
-        
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        
-            packages: {'[+]': ['mhchem']},
-        
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-          
-
-
-    
-    
     <title>
-          
-            Mokey客制化键盘
+        
+          软件下载教程
         
     </title>
-    
-    
-<meta name="generator" content="Hexo 5.4.0"></head>
-<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-blue">
-  
-  <header class="mdui-appbar mdui-appbar-fixed">
-  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
-    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
-    <a href="/" class="mdui-typo-headline">Mokey客制化键盘</a>
-    <a href="/" class="header-subtitle mdui-typo-headline"></a>
-    <div class="mdui-toolbar-spacer"></div>
-    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
-  </div>
-</header>
 
-<div class="mdui-dialog" id="search">
-  
-    <div class="search-form">
-      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
-    </div>
-    <div class="search-result" data-resource="/search.xml"></div>
-  
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.min.css">
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+
+    <!-- katex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <img src="/favicon.png">
+    <span>软件下载教程</span>
+  </a>
+</div>
+    <div id="menu" class="book-menu hide">
+  <ul>
+<li><a href="/hexo-theme-book-demo">Home</a></li>
+</ul>
+<h1 id="Windows版本">Windows版本</h1>
+<h2 id="Windows版本-v2">Windows版本</h2>
+<ul>
+<li><a href="/test/hexo-unit-test/categories">Elements</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/excerpts">Excerpts</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/gallery-post">Gallery Post</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/hello-world">Hello World</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/images">Images</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/link-post-without-title">Untitled</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/link-post">Link Post</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/long-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/no-title">Untitled</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/tag-plugins">Tag Plugins</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/tags">Tags</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/videos">Videos</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/%E4%B8%AD%E6%96%87%E6%B5%8B%E8%AF%95">中文测试</a></li>
+<li><a href="/hexo-theme-book-demo/test/hexo-unit-test/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88">日本語テスト</a></li>
+</ul>
+<h2 id="bugfix">bugfix</h2>
+<ul>
+<li><a href="/hexo-theme-book-demo/test/bugfix/list-test">list test</a></li>
+<li><a href="/hexo-theme-book-demo/test/bugfix/blockquote-position">blockquote position</a></li>
+<li><a href="/hexo-theme-book-demo/test/bugfix/checkbox-list">checkbox list</a></li>
+</ul>
+<h2 id="lots-of-post-in-submenu">lots of post in submenu</h2>
+<ul>
+<li>.</li>
+<li>Fix bug:</li>
+<li>.</li>
+<li>The default setting of spectre.css’s accordion</li>
+<li>is <code>max-height: 50rem</code></li>
+<li>.</li>
+<li>Override the value to <code>max-height: unset</code> in this theme</li>
+<li>.</li>
+<li>Fix in <a target="_blank" rel="noopener" href="https://github.com/kaiiiz/hexo-theme-book/commit/ce5be1d7500722b8bcdc367fc79186c0cfe8ac56">ce5be1d</a></li>
+<li>.</li>
+<li>Test 11</li>
+<li>Test 12</li>
+<li>Test 13</li>
+<li>Test 14</li>
+<li>Test 15</li>
+<li>Test 16</li>
+<li>Test 17</li>
+<li>Test 18</li>
+<li>Test 19</li>
+<li>Test 20</li>
+<li>Test 21</li>
+<li>Test 22</li>
+<li>Test 23</li>
+<li>Test 24</li>
+<li>Test 25</li>
+<li>Test 26</li>
+<li>Test 27</li>
+<li>Test 28</li>
+<li>Test 29</li>
+<li>Test 30</li>
+<li>Test 31</li>
+<li>Test 32</li>
+<li>Test 33</li>
+<li>Test 34</li>
+<li>Test 35</li>
+</ul>
+<h1 id="Demo">Demo</h1>
+<ul>
+<li><a href="/hexo-theme-book-demo/demo/menu-realtime">Menu Realtime Demo</a></li>
+</ul>
+<h2 id="Render">Render</h2>
+<ul>
+<li><a href="/hexo-theme-book-demo/demo/render/markdown-it-demo">markdown-it demo</a></li>
+<li><a href="/hexo-theme-book-demo/demo/render/katex-demo">katex demo</a></li>
+<li><a href="/hexo-theme-book-demo/demo/render/footnotes-demo">footnotes demo</a></li>
+<li><a href="/hexo-theme-book-demo/demo/render/md-container">markdown-container</a></li>
+</ul>
+<h2 id="Lorem-Ipsum">Lorem Ipsum</h2>
+<ul>
+<li><a href="/hexo-theme-book-demo/demo/lorem-ipsum/en-demo">English</a></li>
+<li><a href="/hexo-theme-book-demo/demo/lorem-ipsum/jp-demo">Japanese</a></li>
+<li><a href="/hexo-theme-book-demo/demo/lorem-ipsum/kr-demo">Korean</a></li>
+<li><a href="/hexo-theme-book-demo/demo/lorem-ipsum/tc-demo">Traditional Chinese</a></li>
+<li><a href="/hexo-theme-book-demo/demo/lorem-ipsum/sc-demo">Simplified Chinese</a></li>
+</ul>
+
 </div>
 
-  <aside id="sidebar" class="mdui-drawer">
-    <div class="mdui-tab" mdui-tab>
-        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">Overview</a>
-        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">About</a>
-    </div>
 
-    
-    <div id="sidebar-tab1" class="mdui-p-a-1">
-        <div class="mdui-list">
-            
-                
-                <a href="/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-home"></i>
-                    </div>
-                    <div class="mdui-list-item-content">Home</div>
-                </a>
-            
-                
-                <a href="/tags/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-bookmark"></i>
-                    </div>
-                    <div class="mdui-list-item-content">Tags</div>
-                </a>
-            
-                
-                <a href="/categories/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-folder"></i>
-                    </div>
-                    <div class="mdui-list-item-content">Categories</div>
-                </a>
-            
-                
-                <a href="/archives/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-archive"></i>
-                    </div>
-                    <div class="mdui-list-item-content">Archives</div>
-                </a>
-            
-                
-                <a href="/tools/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-tools"></i>
-                    </div>
-                    <div class="mdui-list-item-content">工具箱</div>
-                </a>
-            
-                
-                <a href="/about/" class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-user"></i>
-                    </div>
-                    <div class="mdui-list-item-content">About</div>
-                </a>
-            
-            <div class="mdui-list-item mdui-ripple">
-                <div class="mdui-list-item-icon">
-                    <i class="iconfont icon-moon"></i>
-                </div>
-                <div class="mdui-list-item-content">Night Mode</div>
-                <label class="mdui-switch" id="darkmode">
-                  <input type="checkbox" id="nightmode_switch"/>
-                  <i class="mdui-switch-icon"></i>
-                </label>
-            </div>           
-        </div>
-    </div>
+<script src="/js/book-menu.js"></script>
 
-    
-    <div id="sidebar-tab2" class="mdui-p-a-1">
-        <div class="sidebar-overview">
-            <div class="sidebar-avatar">
-                
-                    <img src="/icons/avatar.gif"/>
-                
-            </div>
-            <div class="sidebar-author-name">Keyboard</div>
-            <div class="sidebar-description"></div>
-        </div>
-        <div class="sidebar-links">
-            
-                
-                <div class="mdui-chip">
-                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
-                    <a href="mailto:xxx@xxx.com" class="mdui-chip-title">E-Mail</a>
-                </div>
-            
-                
-                <div class="mdui-chip">
-                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
-                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">GitHub</a>
-                </div>
-            
-                
-                <div class="mdui-chip">
-                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
-                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">Steam</a>
-                </div>
-            
-                
-                <div class="mdui-chip">
-                    <span class="mdui-chip-icon"><i class="iconfont icon-weibo"></i></span>
-                    <a target="_blank" rel="noopener" href="https://your.url" class="mdui-chip-title">Weibo</a>
-                </div>
-            
-        </div>
-        <ul class="mdui-list" mdui-collapse="{accordion: true}">
-            <li class="mdui-collapse-item">
-                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-icon">
-                        <i class="iconfont icon-link"></i>
-                    </div>
-                    <div class="mdui-list-item-content">Links</div>
-                    <div class="mdui-collapse-item-arrow">
-                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
-                    </div>
-                </div>
-                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
-                    
-                        <a target="_blank" rel="noopener" href="https://garybear.cn/hexo-theme-meadow/" class="mdui-list-item mdui-ripple">
-                            Meadow说明文档
-                        </a>
-                    
-                </ul>
-            </li>
-        </ul>
-    </div>
+  </div>
 
-    <div class="mdui-divider"></div>
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <p>这是一个测试内容</p>
+
+</div>
+
+
+  <div class="book-comments">
     
-    
-</aside>
+<script src="https://utteranc.es/client.js"
+        repo="/"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+
+
+
+  </div>
+
+
+
+<script src="/js/book-post.js"></script>
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
   
-  <main id="main-contain" class="mdui-container mdui-m-t-5">
-    
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/40421/">【必看】使用前请先看此文档，本文是目录型的，尤其是对刚入手客制化键盘的客户特别有帮助!</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2022-09-20
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <blockquote><p>感谢您使用我们的产品，如果您是初次入手客制化键盘，这篇目录目录型的教程将会对您了解本款产品有很大帮助，按照顺序看完也不会觉得无从下手了，希望您能耐心看完</p>
-</blockquote>
-
-<h3 id="第一步：测试"><a href="#第一步：测试" class="headerlink" title="第一步：测试"></a>第一步：测试</h3><p>1：包着板子的黑色塑胶袋是 <strong>防静电</strong> 的，希望您可以在测试的时候垫着它来测试，以免静电对PCB造成损坏，虽然这是不常见的。</p>
-<p>2：然后就可以把PCB连接上电...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/40421/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/56583/">【必看】VIA软件使用方法（视频）</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2022-09-20
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <blockquote><p>VIA软件版本变更介绍视频</p>
-</blockquote>
-
-<div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=560519612&bvid=BV1Fe4y187dX&cid=833111089&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfulls...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/56583/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/55414/">【必看】VIA识别方法（驱动安装）</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2022-09-20
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=291073109&bvid=BV1Tf4y187uj&cid=351390199&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: ...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/55414/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/17032/">【必看】按键设置方法</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2022-08-27
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=687482097&bvid=BV1XU4y167n5&cid=816485353&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: ...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/17032/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/37564/">【必看】FN按键功能设置</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2022-08-27
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=557422640&bvid=BV17e4y1Z72B&cid=816483772&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: ...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/37564/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/61522/">【必看】灯效调整（按键控制）</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2022-08-27
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=472447452&bvid=BV17T411F7N7&cid=816484844&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: ...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/61522/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/15924/">【必看】固件刷写教程(升级固件或更换固件)</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2022-03-19
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
+    <div class="book-post-meta">
 
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <blockquote><p>硬件，也就是芯片需要驱动级别的程序来支持才能发挥作用，这里指的驱动不是“VIA改键软件”的错误叫法，很多人把VIA叫成驱动？这里的<strong>驱动</strong>是指芯片运行的程序，不要混淆</p>
-</blockquote>
-
-<p>1.下载QMK Toolbox<br>  Windows：<a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/i76Ecpbzfpg">点击下载</a><br>  Mac OS：<a target="_blank" rel="noopener" href="https://mokey.lanzoui.com/ip5Dopbzeza">点击下载</a></p>
-<p...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/15924/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/59222/">【必看】保存按键配置</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2022-01-12
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <blockquote><p>此功能的作用是 <a href>备份/恢复</a> 用户按键设置<br>客制化键盘拥有多层设置按键，每次都逐一设置按键会非常繁琐，此功能相当与一键保存和一键恢复作用。</p>
-</blockquote>
-
-<h3 id="界面说明"><a href="#界面说明" class="headerlink" title="界面说明"></a>界面说明</h3><p><img src="/posts/59222/jiemian.jpg"><br>1.保存：保存现有VIA中的按键设置，并生成JSON文件<br>2.加载：加载JSON文件即可恢复设置</p>
-<p>JS...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/59222/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/40342/">默认按键（一键还原设置）</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2022-01-15
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <blockquote><p>此功能的作用是 <a href>一键恢复默认按键设置</a>，还原方法请参考<a href="../../posts/59222/index.html">这个教程</a></p>
-</blockquote>
-<h3 id="默认按键文件下载"><a href="#默认按键文件下载" class="headerlink" title="默认按键文件下载"></a>默认按键文件下载</h3><p><a target="_blank" rel="noopener" href="https://mokey.lanzouw.com/iHPvhyp8lha">点此下载</a></p>
-<h3 id="按键设置说明"><a href...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/40342/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/55341/">【选看】恢复芯片EEPROM方法</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2022-03-19
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <blockquote><p>QMK没有所谓的恢复出厂设置，如果觉得键盘有任何异常，均可用此办法把芯片完全擦除后刷入新的固件，将本文所有步骤进行完毕后会完成擦除和刷入新的固件</p>
-</blockquote>
-<h3 id="第一步：先下载一个板子对应的固件"><a href="#第一步：先下载一个板子对应的固件" class="headerlink" title="第一步：先下载一个板子对应的固件"></a>第一步：先下载一个板子对应的固件</h3><p><a href="../../firmware">点此下载</a></p>
-<h3 id="第二步：下载QMK工具箱"><a hr...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/55341/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/43929/">宏设置</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2022-08-27
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <div style="position:relative; padding-bottom:75%; width:100%; height:0">
-    <iframe src="//player.bilibili.com/player.html?aid=644941147&bvid=BV1EY4y1u7Rm&cid=816485731&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="false" style="position:absolute; height: ...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/43929/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/10976/">关于外壳适配的问题</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2021-06-23
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
+  <div class="author">
 
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <blockquote><p>请尽量购买GH60系列配套使用的外壳及零配件，板子严格按照GH60标准开孔和尺寸制作,PCB尺寸：285mm×95mm<br>外壳螺丝柱建议选择比较细的螺丝柱，由于板子是正装设计，一面过粗的螺丝柱接触到热插拔轴座引脚带来的按键串联问题<br>若已经购买过粗的螺丝柱外壳，请使用电工胶布为其绝缘，此问题带来的按键串联并非PCB质量问题，为选用的配件不匹配导致。</p>
-</blockquote>
-
-<p><img src="/posts/10976/waike.jpg"><br><img src="/posts/10976/waikeluosizhu.jpg">...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/10976/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-    <article class="mdui-card mdui-m-b-5 mdui-hoverable">    
-      
-      
-        <div class="post-header"> 
-  <a class="post-header-title" href="/posts/38310/">配列变更</a>
-  <div class="post-header-meta">
-    <span>
-      <span class="iconfont icon-calendar"></span>
-      Posted on:&nbsp;2021-05-22
-    </span>
-    <span>
-      <span class="iconfont icon-calendar-check"></span>
-      Edited on:&nbsp;2021-11-20
-    </span>
-    <span>
-      <span class="iconfont icon-folder"></span>
-      In:&nbsp;
-    </span>
-    
-  </div>
-</div>   
-    
-
-
-
-      
-      
-  <div class="tag-line-space"></div>
-
-      
-      <div id="achieve-abstract" class="mdui-card-content mdui-p-x-4">
-        <div class="post-abstract mdui-typo ">
-          
-            <blockquote><p>旧版本61才会出现这个问题，63和64板子刷新mokey专用固件，这个问题将不会出现<br>改键之前，请按照如下操作调整成自己键盘适用的即可<br>*更改完配列才能修改按键，否则按键功能不能应用到键盘上</p>
-</blockquote>
-
-<h3 id="首先打开软件界面"><a href="#首先打开软件界面" class="headerlink" title="首先打开软件界面"></a>首先打开软件界面</h3><p><img src="/posts/38310/tiaozheng.jpg"></p>
-<h3 id="标准61"><a href="#...
-          
-        </div>
-        
-        <div style="text-align:center;">
-          <a class="post-readmore mdui-btn mdui-ripple mdui-btn-raised" href="/posts/38310/">Read More</a>
-        </div>
-      </div>
-    </article>
-
-
-
-  </main>
-  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
-  <div class="mdui-container">
-    <div class="mdui-row">
-      
-        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
-      
-      <span>
-        &copy; 2015 - 2023 
-        
-          <span style="color:#d9333f" class="iconfont icon-heart"></span>
-        
-        Keyboard
-      </span>
-    </div>
-    <div class="mdui-row">
+    <!-- Author image -->
+    <div class="author-img">
       
-        <div class="mdui-col-xs-6 mdui-text-right">
-          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
-        </div>
-        <div class="mdui-col-xs-6 mdui-text-left">
-          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
-        </div>
+        <figure class="avatar avatar-lg">
+          <img src="/author.jpg" alt="...">
+        </figure>
       
     </div>
-    <div class="mdui-row">
-      
-        <div class="mdui-col-xs-6 mdui-text-right">
-          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>Total Visitors <span id="busuanzi_value_site_uv"></span></span>
-        </div>
-        <div class="mdui-col-xs-6 mdui-text-left">
-          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>Total Views <span id="busuanzi_value_site_pv"></span></span>
-        </div>
-      
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>教程</div>
+      <div>2023-07-07</div>
     </div>
- </div>
-</footer>
-  
-  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
-  
+  </div>
+
   
 
-    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+<div class="book-tocbot-menu">
+  <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
+  <a onclick="go_top()">Back to top</a>
+  <a onclick="go_bottom()">Go to bottom</a>
+</div>
 
 
+<script src="/js/book-toc.js"></script>
 
-
-
-
-
-    
-<script src="/js/mdui.min.v1.0.0.js"></script>
-
-
-
-
-<script src="/js/meadow.js"></script>
+</div>
+      </div>
+    </div>
+  </div>
+  
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
 
 </body>
-</html >
+</html>
+
+
+<script src="/js/book.js"></script>
