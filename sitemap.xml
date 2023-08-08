@@ -2,16 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://runheme.github.io/home.html</loc>
+    <loc>https://runheme.github.io/mac/chajian/portraiture4/index.html</loc>
     
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://runheme.github.io/win/chajian/portraiture4/index.html</loc>
+    
+    <lastmod>2023-08-08</lastmod>
     
   </url>
   
   <url>
     <loc>https://runheme.github.io/win/az/index.html</loc>
     
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://runheme.github.io/home.html</loc>
+    
+    <lastmod>2023-08-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://runheme.github.io/win/chajian/DR5/index.html</loc>
+    
+    <lastmod>2023-08-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://runheme.github.io/mac/chajian/DR5/index.html</loc>
+    
+    <lastmod>2023-08-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://runheme.github.io/menu.html</loc>
+    
+    <lastmod>2023-08-08</lastmod>
     
   </url>
   
@@ -101,13 +136,6 @@
   
   <url>
     <loc>https://runheme.github.io/win/b22/index.html</loc>
-    
-    <lastmod>2023-08-04</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://runheme.github.io/menu.html</loc>
     
     <lastmod>2023-08-04</lastmod>
     
@@ -382,7 +410,7 @@
 
   <url>
     <loc>https://runheme.github.io/</loc>
-    <lastmod>2023-08-04</lastmod>
+    <lastmod>2023-08-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
